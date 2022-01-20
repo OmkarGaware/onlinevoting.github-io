@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System - Registration</title>
+    <link rel="icon" href="../image/1.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+</head>
+
+<body>
+
+    <style>
+        #img{
+            height: 150px;
+             width: 150px;
+        }
+        #address{
+            width: 375px;
+               }
+        #imagepart{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 375px;
+                }   
+        #role{
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            width: 375px;
+            background-color: white;
+        }
+        #role select{
+            border-radius: 5px;
+            padding: 10px;
+        }    
+
+    </style>
+   <div id="headersection"> 
+    <img src="../image/1.jpg" alt="logo">
+    <h1 style="float: right; padding-right: 35%;" > Online Voting System</h1>
+   <marquee direction="right">Suman Ramesh Tulsiani Technical Campus-Faculty of Engineering Kamshet,Pune</marquee>
+    
+</div>
+<div id="navbar">
+    <a id="active" href="../index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="#">About us</a>
+</div>
+
+<hr>
+    <center>
+        <div id="register">
+    <h2 style="color: rgba(0, 0, 0, 0.801);">Registration</h2>
+    <form action="../api/register.php" method="POST" enctype="multipart/form-data">
+        <input type="text"  name="name" placeholder="Enter Name">
+        <input type="number"  name="mobile" placeholder="Enter Mobile"><br><br>
+        <input type="password"  name="password" placeholder="Enter Password">
+        <input type="password"  name="cpassword" placeholder="Confirm Password"><br><br>
+        <input id="address" type="email"  name="address" placeholder="Enter email"><br><br>
+        
+            <div id="imagepart" style="color: black;">
+            <b>Upload Image:</b><input type="file" name="photo" >
+            </div><br>
+        <div id="role" style="color: black; ">
+       <b>Select Role:</b><select name="role">
+            <option value="1">Voter</option>
+            <option value="2">Group</option>
+        </select>
+    </div><br>
+        <button style="padding: 5px;
+        border-radius: 5px;
+        font-size: 15px;
+        background-color: burlywood;
+        color: black; cursor: pointer;"
+        >Register</button><br><br>
+        <div id="loginhere" style="color: black;">
+        Already User? <a href="login.html"  style="text-decoration: none;">Login Here</a>
+    </div>
+    <br><br>
+</div>
+    </form>
+</center>
+</body>
+</html>

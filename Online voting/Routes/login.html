@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System - Home</title>
+    <link rel="icon" href="image/1.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+</head>
+
+<body>
+   
+   <div id="headersection"> 
+    <img src="../image/1.jpg" alt="logo">
+    <h1 style="float: right; padding-right: 35%; color: white;" > Online Voting System</h1>
+   <marquee direction="right" style="color: white;">Suman Ramesh Tulsiani Technical Campus-Faculty of Engineering Kamshet,Pune</marquee>
+    
+</div>
+<div id="navbar">
+    <a id="active" href="../index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="#">About us</a>
+</div>
+
+<hr>
+    <center>
+    <div id="bodysection">
+        <div id="login">
+        <form action="../api/login.php" method="POST">
+            <h2 style="color: rgba(0, 0, 0, 0.801);">Login</h2>
+            <input type="number" name="mobile" placeholder="Enter Mobile Number"><br><br>
+            <input type="password" name="password" placeholder="Enter Password"><br><br>
+            <select id="dropbox" name="role">
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select><br><br>
+            <Button id="loginbutton" type="submit">Login</Button><br><br>
+            <div id="newuser" style="color: black;">
+            New User? <a href="register.html">Register here</a>
+        </div>
+        <br><br><br>
+    </div>
+        </form>
+    </div>
+</center>
+</body>
+
+</html>
